@@ -1,32 +1,15 @@
-import React from "react";
 import { createRoot } from "react-dom";
-
-
-const User = (props) => {
-    return React.createElement(
-        'div', {}, [
-            React.createElement("h1", {}, props.name),
-            React.createElement("h2", {}, props.email),
-            React.createElement("h3", {}, props.age),
-        ]
-    );
-
-};
-
+import User from "./User";
 
 const App = () => {
+        <h1>Hello </h1>
+        ,
+        <User name="amine"  email="amine@gmail.com" age="25" ></User>
 
-    return React.createElement(
-        "div", {}, [
-            React.createElement('h1', {}, "pure rreact"),
-            React.createElement(User, { name: "amine", age: 26, email: "amine@gmail.com" }),
-
-        ]
-    )
 };
 
 const container = document.getElementById('root');
 
 const root = createRoot(container);
 
-root.render(React.createElement(App));
+root.render(<App/>);
