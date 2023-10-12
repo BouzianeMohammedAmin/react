@@ -1,17 +1,18 @@
 import { createRoot } from "react-dom/client";
-import React from "react";
 import SearchParams from "./SearchParams";
+import React from "react";
 
 const App = () => {
-       return (
-              <div>
-                     <SearchParams/>
-              </div>
-       );
+  return (
+    <div>
+      <h1>Adopte Me</h1>
+      <SearchParams />
+    </div>
+  );
 };
 
-const container = document.getElementById('root');
+const container = document.getElementById("root");
 
 const root = createRoot(container);
 
-root.render(<App/>) ;
+root.render(<App />);
