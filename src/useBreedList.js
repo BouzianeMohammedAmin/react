@@ -27,8 +27,8 @@ export default function useBreedList(animal) {
       setBreedList(localCache[animal]);
       setStatus("Loaded");
     }
-    console.log(breedList) ;
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  } , [animal]);
-  return [breedList , status] ;
+    //console.log(breedList);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [animal]);
+  return [breedList, status];
 }
